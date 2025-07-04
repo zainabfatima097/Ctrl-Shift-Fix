@@ -27,7 +27,7 @@
 
 ## About The Project
 
-**Codeboost** is a **VS Code extension** designed to boost developer productivity by automating **code completion, bug fixes with GUI, automated builds and testing**. It helps developers write code faster and with fewer errors by offering **AI-powered suggestions**, **real-time error detection**, and **one-click bug fixing & auto-build**.
+**Ctrl+Shift+Fix** is a **VS Code extension** designed to boost developer productivity by automating **code completion, bug fixes with GUI, automated builds and testing**. It helps developers write code faster and with fewer errors by offering **AI-powered suggestions**, **real-time error detection**, and **one-click bug fixing & auto-build**.
 
 ---
 
@@ -80,7 +80,7 @@ Here are some instructions to make your own copy of Codeboost and get started wi
    ```
 4. Change git remote url to avoid accidental pushes to base project
    ```sh
-   git remote set-url origin https://github.com/shambhavipaygude/codeboost
+   git remote set-url origin https://github.com/zainabfatima097/Ctrl+Shift+Fix
    git remote -v # confirm the changes
    ```
 
@@ -93,9 +93,9 @@ Here are some instructions to make your own copy of Codeboost and get started wi
    ```
 2. Press FN + F5 to start deubug console and open Extension Development Host.
    
-3. Press Ctrl + Shift + P and type Codeboost.
+3. Press Ctrl + Shift + P and type Ctrl+Shift+Fix.
 
-4. Codeboost is live!
+4. Ctrl+Shift+Fix is live!
 
 https://github.com/user-attachments/assets/2dfbfdf7-3a3f-4b5e-bfed-7da98bd5b2c3 
 
