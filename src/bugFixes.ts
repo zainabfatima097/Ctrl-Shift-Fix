@@ -9,7 +9,7 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
 
 export function activateBugFix(context: vscode.ExtensionContext) {
-    let disposable = vscode.commands.registerCommand("codeboost.fixBugs", async () => {
+    let disposable = vscode.commands.registerCommand("ctrl+shift+fix.fixBugs", async () => {
         const editor = vscode.window.activeTextEditor;
         if (!editor) {
             vscode.window.showErrorMessage("No active editor found.");
@@ -22,7 +22,7 @@ export function activateBugFix(context: vscode.ExtensionContext) {
 
     // create status bar button for bug fixing
     const bugFixButton = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);
-    bugFixButton.command = "codeboost.fixBugs";
+    bugFixButton.command = "ctrl+shift+fix.fixBugs";
     bugFixButton.text = "$(wrench) Fix Bugs";
     bugFixButton.tooltip = "Click to analyze and fix syntactic errors in the code";
     bugFixButton.show();

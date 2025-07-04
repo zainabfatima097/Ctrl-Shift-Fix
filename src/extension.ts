@@ -6,8 +6,8 @@ import { activateAutoBuildButton } from "./autoBuild";
 import {activateTestRunner} from "./testRunner";
 
 export function activate(context: vscode.ExtensionContext) {
-    let disposable = vscode.commands.registerCommand("codeboost.helloWorld", async () => {
-        vscode.window.showInformationMessage("Codeboost is live!");
+    let disposable = vscode.commands.registerCommand("ctrl+shift+fix.helloWorld", async () => {
+        vscode.window.showInformationMessage("Ctrl+Shift+Fix is live!");
         const editor = vscode.window.activeTextEditor;
         if (!editor) {
             vscode.window.showErrorMessage("No active editor found.");
