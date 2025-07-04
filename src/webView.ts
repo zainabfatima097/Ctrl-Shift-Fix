@@ -15,7 +15,7 @@ export function getWebviewContent(suggestions: {type: string; fix: string }[]) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CodeBoost Sidebar</title>
+        <title>Ctrl+Shift+Fix Sidebar</title>
         <style>
         @font-face {
             font-family: 'PixelFont';
@@ -175,7 +175,7 @@ export function getWebviewContent(suggestions: {type: string; fix: string }[]) {
         <div class="container">
         <div class="header">
             <span class="pixel-decoration"></span>
-            CODEBOOST POWER-UPS
+            CTRL+SHIFT+FIX POWER-UPS
             <span class="pixel-decoration"></span>
         </div>
         
