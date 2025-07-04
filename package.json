@@ -1,6 +1,6 @@
 {
-  "name": "codeboost",
-  "displayName": "CodeBoost",
+  "name": "ctrl-shift-fix",          
+"displayName": "Ctrl+Shift+Fix",   
   "description": "A VS Code extension to automate the generation of code, suggest bug fixes and automate continuous build and integration processes.",
   "version": "0.0.1",
   "engines": {
@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "codeboost.helloWorld",
-        "title": "Codeboost"
+        "command": "ctrl+shift+fix.helloWorld",
+        "title": "Ctrl+Shift+Fix"
       }
     ]
   },
