@@ -56,7 +56,7 @@
 
 ## Getting Started
 
-Here are some instructions to make your own copy of Codeboost and get started with it locally.
+Here are some instructions to make your own copy of Ctrl+Shift+Fix and get started with it locally.
 
 ### Prerequisites
 
@@ -68,7 +68,7 @@ Here are some instructions to make your own copy of Codeboost and get started wi
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/shambhavipaygude/codeboost
+   git clone https://github.com/zainabfatima097/Ctrl+Shift+Fix
    ```
 2. Install NPM packages
    ```sh
