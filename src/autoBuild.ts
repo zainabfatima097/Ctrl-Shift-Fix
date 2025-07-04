@@ -50,7 +50,7 @@ export async function runBuild(document: vscode.TextDocument) {
             vscode.window.showErrorMessage("Unsupported file type for build.");
             return;
         }
-        const terminal = vscode.window.createTerminal("CodeBoost Build");
+        const terminal = vscode.window.createTerminal("Ctrl+Shift+Fix Build");
         terminal.show();
         terminal.sendText(buildCommand);
         

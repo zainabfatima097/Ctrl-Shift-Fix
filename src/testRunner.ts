@@ -53,7 +53,7 @@ async function runTestCases(
     language: string,
     testCases: { input: string; output: string }[]
   ): Promise<void> {
-    const outputChannel = vscode.window.createOutputChannel("CodeBoost Tests");
+    const outputChannel = vscode.window.createOutputChannel("Ctrl+Shift+Fix Tests");
     outputChannel.show(true); // show output panel
     outputChannel.appendLine(`Running tests for ${filePath} (${language})\n`);
   
@@ -106,7 +106,7 @@ async function runTestCases(
   
 export function activateTestRunner(context: vscode.ExtensionContext) {
   const disposable = vscode.commands.registerCommand(
-    "codeboost.runTests",
+    "ctrl+shift+fix.runTests",
     async () => {
       const editor = vscode.window.activeTextEditor;
       if (!editor) {
@@ -138,7 +138,7 @@ export function activateTestRunner(context: vscode.ExtensionContext) {
     vscode.StatusBarAlignment.Right,
     100
   );
-  testButton.command = "codeboost.runTests";
+  testButton.command = "ctrl+shift+fix.runTests";
   testButton.text = "$(beaker) Run Tests";
   testButton.tooltip = "Generate and execute test cases for the current code";
   testButton.show();

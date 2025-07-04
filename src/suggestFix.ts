@@ -67,10 +67,10 @@ async function getBugSuggestions(
 
                 const diagnostic = new vscode.Diagnostic(
                     range,
-                    `CodeBoost: ${errorType}: ${fix}`,
+                    `Ctrl+Shift+Fix: ${errorType}: ${fix}`,
                     vscode.DiagnosticSeverity.Information
                 );
-                diagnostic.source = "CodeBoost";
+                diagnostic.source = "Ctrl+Shift+Fix";
                 diagnostics.push(diagnostic);
 
                 suggestions.push({type: errorType, fix });
@@ -85,7 +85,7 @@ async function getBugSuggestions(
 }
 
 export function activateSuggestions(context: vscode.ExtensionContext) {
-    diagnosticCollection = vscode.languages.createDiagnosticCollection("CodeBoost");
+    diagnosticCollection = vscode.languages.createDiagnosticCollection("Ctrl+Shift+Fix");
     context.subscriptions.push(diagnosticCollection);
 
     let lastRequestTime = 0;
@@ -127,8 +127,8 @@ vscode.workspace.onDidChangeTextDocument(async (event) => {
 function showWebview(suggestions: {type: string; fix: string }[]) {
     if (!webviewPanel) {
         webviewPanel = vscode.window.createWebviewPanel(
-            "codeBoostSidebar",
-            "CodeBoost Suggestions",
+            "ctrl+shift+fix Sidebar",
+            "Ctrl+Shift+Fix Suggestions",
             { viewColumn: vscode.ViewColumn.Two, preserveFocus: true },
             { enableScripts: true, retainContextWhenHidden: true }
         );
