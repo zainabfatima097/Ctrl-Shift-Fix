@@ -50,10 +50,6 @@
 
 ---
 
-## Workflow 
-![Design and Approach](<public/workflow.jpg>) 
-
-
 ## Getting Started
 
 Here are some instructions to make your own copy of Ctrl+Shift+Fix and get started with it locally.
@@ -96,8 +92,6 @@ Here are some instructions to make your own copy of Ctrl+Shift+Fix and get start
 3. Press Ctrl + Shift + P and type Ctrl+Shift+Fix.
 
 4. Ctrl+Shift+Fix is live!
-
-https://github.com/user-attachments/assets/2dfbfdf7-3a3f-4b5e-bfed-7da98bd5b2c3 
 
 ## Current Limitations
 Due to continuous large number of API calls for auto-completion and suggestion of possible bugs, resource might get exhausted.
